@@ -7,9 +7,10 @@ body {
     background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
     font-family: Arial, sans-serif;
     margin: 0;
+    user-select: none;
 }
 
-/* Video Box Styling */
+/* Music Box Styling */
 .container {
     display: flex;
     justify-content: center;
@@ -18,19 +19,36 @@ body {
     height: 100%;
 }
 
-.vide-box {
+.music-box {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 350px;
 }
 
-/* Video Styling */
-video {
+/* Music Cover Styling */
+.music-cover {
     width: 100%;
-    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Music Title Styling */
+.music-title {
+    font-size: 18px;
+    color: white;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Audio Player Styling */
+audio {
+    width: 100%;
+    margin-top: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
